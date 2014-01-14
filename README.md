@@ -1,6 +1,8 @@
 # Ruby Drill Argv Basics 
  
 ##Learning Competencies 
+* Use ARGV to take in user input from the command line
+* Properly reformat ARGV data to meet to program requirements
 
 ##Summary 
 
@@ -32,14 +34,8 @@ The command line arguments are:
 jesse@dewey ~ $ 
 ```
 
-### Learning Goals
-
-The goal here is to become familiar with how `ARGV` works.
-
-
-## Objectives
-
-### ARGV-ify Pig Latin
+##Releases
+###Release 0: ARGV-ify Pig Latin
 
 Take your pig latin script and augment it so you can do the following:
 
@@ -51,7 +47,7 @@ $
 
 Save this file as `pig_latin.rb` in your gist.  Remember, you can add multiple files to a gist.
 
-### ARGV-ify RPN Calculator
+###Release 1: ARGV-ify RPN Calculator
 
 Take your RPN calculator script and augment it so you can do the following:
 
@@ -64,9 +60,3 @@ Note, you'll have to pass in the arguments in quotes because some characters hav
 
 Save this file as `rpn.rb` in your gist.  Remember, you cn add multiple files to a gist. 
 
-##Releases
-###Release 0 
-
-##Optimize Your Learning 
-
-##Resources
