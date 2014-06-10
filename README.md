@@ -1,10 +1,10 @@
-# Ruby Drill Argv Basics 
- 
-##Learning Competencies 
+# Ruby Drill Argv Basics
+
+##Learning Competencies
 * Use ARGV to take in user input from the command line
 * Properly reformat ARGV data to meet to program requirements
 
-##Summary 
+##Summary
 
  Any Ruby program you write is running inside another pieces of software: the Ruby interpreter.  And that interpreter is itself running inside another piece of software: your operating system.  These software layers "outside" your Ruby program are called **the environment** and there are many ways you can shuttle data between the environment and your program.
 
@@ -31,7 +31,7 @@ jesse@dewey ~ $ ruby argv.rb "this come in as one" "this comes in as two"
 The command line arguments are:
 ["this come in as one", "this comes in as two"]
 
-jesse@dewey ~ $ 
+jesse@dewey ~ $
 ```
 
 ##Releases
@@ -45,18 +45,18 @@ iay ovelay aseballay
 $
 ```
 
-Save this file as `pig_latin.rb` in your gist.  Remember, you can add multiple files to a gist.
+Commit your new script
 
-###Release 1: ARGV-ify RPN Calculator
+###Release 1: ARGV-ify Anagrams
 
-Take your RPN calculator script and augment it so you can do the following:
+Take your anagram detector code and write a script that takes two arguments and tells you if they're anagrams of each other.
 
 ```text
-$ ruby rpn.rb "3 4 +"
-7
+$ ruby anagram.rb cinema iceman
+true
+
+$ ruby anagram.rb these are
+false
 ```
 
-Note, you'll have to pass in the arguments in quotes because some characters have special meaning on the command-line.  `*` for example means "every file in the current directory."  Probably not what you want to pass in as command-line arguments!
-
-Save this file as `rpn.rb` in your gist.  Remember, you cn add multiple files to a gist. 
-
+Commit your new script
