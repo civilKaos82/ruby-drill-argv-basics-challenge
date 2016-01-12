@@ -1,9 +1,5 @@
 # Ruby Drill: Command Line Arguments
 
-##Learning Competencies
-* Use ARGV to take in user input from the command line
-* Properly reformat ARGV data to meet to program requirements
-
 ##Summary
 
  Any Ruby program you write is running inside another pieces of software: the Ruby interpreter.  And that interpreter is itself running inside another piece of software: your operating system.  These software layers "outside" your Ruby program are called **the environment** and there are many ways you can shuttle data between the environment and your program.
