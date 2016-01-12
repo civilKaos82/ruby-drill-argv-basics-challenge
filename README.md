@@ -1,4 +1,4 @@
-# Ruby Drill Argv Basics
+# Ruby Drill: Command Line Arguments
 
 ##Learning Competencies
 * Use ARGV to take in user input from the command line
