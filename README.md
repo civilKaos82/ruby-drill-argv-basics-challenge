@@ -30,29 +30,8 @@ When we execute a Ruby script we use the `ruby` command followed by the name of 
 *Table 1*.  Example `ARGV` values based on command line arguments.
 
 
-##Releases
-###Release 0: ARGV-ify Pig Latin
+## Releases
+### Release 0: Refactor to Use Command Line Arguments
+Take a minute to run the provided script:  `ruby runner.rb`.  We'll be asked to input two words, and the script will report whether or not the two words we input are anagrams.
 
-Take your pig latin script and augment it so you can do the following:
-
-```
-$ ruby pig_latin.rb i love baseball
-iay ovelay aseballay
-$
-```
-
-Commit your new script
-
-###Release 1: ARGV-ify Anagrams
-
-Take your anagram detector code and write a script that takes two arguments and tells you if they're anagrams of each other.
-
-```text
-$ ruby anagram.rb cinema iceman
-true
-
-$ ruby anagram.rb these are
-false
-```
-
-Commit your new script
+Refactor the code in the file `runner.rb` so that instead of asking the user for input, the user provides both words as command line arguments.  Remember, each command line argument will be accessible as a string in the `ARGV` array.
