@@ -35,3 +35,17 @@ When we execute a Ruby script we use the `ruby` command followed by the name of 
 Take a minute to run the provided script:  `ruby runner.rb`.  We'll be asked to input two words, and the script will report whether or not the two words we input are anagrams.
 
 Refactor the code in the file `runner.rb` so that instead of asking the user for input, the user provides both words as command line arguments.  Remember, each command line argument will be accessible as a string in the `ARGV` array.
+
+
+## Conclusion
+This was a first look at writing code that works with command line arguments.  We'll see them pop up from time to time, and we'll use them regularly.
+
+```
+$ rspec --no-color  --format progress spec/anagram_spec.rb
+```  
+*Figure 3*.  Running RSpec with command line arguments for configuration.
+
+Actually, we're already using them.  When we run the `rspec` command we sometimes specify different options, like a specific file to run. And we might configure it's color options or format the output a certain way.  When we do so we're using command line arguments (see Figure 3).  And, being that RSpec is written in Ruby, those options end up in `ARGV` (see [code][rspec-core argv]).  When we begin working with Rails, we'll use the `rails` command and use command line arguments to specify what we want to do:  start the server, open the console, etc.  As we can probably guess, these command line arguments end up in `ARGV` (see [code][rails argv]).  
+
+[rails argv]: https://github.com/rails/rails/blob/master/railties/lib/rails/commands.rb
+[rspec-core argv]: https://github.com/rspec/rspec-core/blob/be0e1bc0a2b03e3f820195f54b0fe96c87fa587f/lib/rspec/core/runner.rb#L45
