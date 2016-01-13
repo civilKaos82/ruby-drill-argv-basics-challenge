@@ -19,13 +19,13 @@ When we execute a Ruby script, Ruby creates a constant for us: `ARGV`—short fo
 
 When we execute a Ruby script we use the `ruby` command followed by the name of the file to run.  Any additional text is used as the command line arguments. Each individual word is considered a separate argument, but we can use quotation marks to get around this.  In Table 1, we have some examples of running a ruby script and what `ARGV` would look like in each example.
 
-| Executing the Script                | Value of `ARGV` in Ruby |
-| :--                                 | :---                    |
-| `$ ruby runner.rb`                  | `[]`                    |
-| `$ ruby runner.rb Chris`            | `["Chris"]`             |
-| `$ ruby runner.rb Chris Seidel`     | `["Chris", "Seidel"]`   |
-| `$ ruby runner.rb "Chris Seidel"`   | `["Chris Seidel"]`      |
-| `$ ruby runner.rb "Chris Seidel" 5` | `["Chris Seidel", "5"]` |
+| Example       | Executing the Script                | Value of `ARGV` in Ruby |
+| :---          | :--                                 | :---                    |
+| No arguments  | `$ ruby runner.rb`                  | `[]`                    |
+| 1 Argument    | `$ ruby runner.rb Chris`            | `["Chris"]`             |
+| 2 Arguments   | `$ ruby runner.rb Chris Seidel`     | `["Chris", "Seidel"]`   |
+| 1 With quotes | `$ ruby runner.rb "Chris Seidel"`   | `["Chris Seidel"]`      |
+| 2 With quotes | `$ ruby runner.rb "Chris Seidel" 5` | `["Chris Seidel", "5"]` |
 
 *Table 1*.  Example `ARGV` values based on command line arguments.
 
