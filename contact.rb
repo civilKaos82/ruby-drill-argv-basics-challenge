@@ -7,4 +7,12 @@ class Contact
     @phone = args.fetch(:phone)
     @email = args.fetch(:email)
   end
+
+  def to_s
+    <<-CONTACT_AS_A_STRING.gsub(/^ */, '')
+      #{first_name} #{last_name}
+      - phone:  #{phone}
+      - e-mail: #{email}
+    CONTACT_AS_A_STRING
+  end
 end
