@@ -3,12 +3,12 @@
 ## Summary
 When we write an application, we sometimes need to get data from the user.  For example, if we wanted to write an application that allows users to convert English to Pig Latin, the user would need to supply the English.  One option is to build a user interface that asks the user for input.  We can see an example of this in Figure 1.
 
-![user interface animation](readme-assets/user-interface-animation.gif)  
+![user interface animation](readme-assets/user-interface-animation.gif)
 *Figure 1*.  A script which prompts the user for input.
 
 Alternatively, we can write an application so that users pass in data right when the application is executed.  In other words, users supply *command line arguments* when they run the application.  Just like passing arguments to a method when we call it, we can provide arguments to our applications when we run them.  We can see an example of this in Figure 2.
 
-![argv interface animation](readme-assets/argv-animation.gif)  
+![argv interface animation](readme-assets/argv-animation.gif)
 *Figure 2*.  A script which relies on command line arguments.
 
 
@@ -42,10 +42,10 @@ This was a first look at writing code that works with command line arguments.  W
 
 ```
 $ rspec --no-color  --format progress spec/anagram_spec.rb
-```  
+```
 *Figure 3*.  Running RSpec with command line arguments for configuration.
 
-Actually, we're already using them.  When we run the `rspec` command we sometimes specify different options, like a specific file to run. And we might configure it's color options or format the output a certain way.  When we do so we're using command line arguments (see Figure 3).  And, being that RSpec is written in Ruby, those options end up in `ARGV` (see [code][rspec-core argv]).  When we begin working with Rails, we'll use the `rails` command and use command line arguments to specify what we want to do:  start the server, open the console, etc.  As we can probably guess, these command line arguments end up in `ARGV` (see [code][rails argv]).  
+Actually, we're already using them.  When we run the `rspec` command we sometimes specify different options, like a specific file to run. And we might configure its color options or format the output a certain way.  When we do so we're using command line arguments (see Figure 3).  And, being that RSpec is written in Ruby, those options end up in `ARGV` (see [code][rspec-core argv]).  When we begin working with Rails, we'll use the `rails` command and use command line arguments to specify what we want to do:  start the server, open the console, etc.  As we can probably guess, these command line arguments end up in `ARGV` (see [code][rails argv]).
 
 [rails argv]: https://github.com/rails/rails/blob/master/railties/lib/rails/commands.rb
 [rspec-core argv]: https://github.com/rspec/rspec-core/blob/be0e1bc0a2b03e3f820195f54b0fe96c87fa587f/lib/rspec/core/runner.rb#L45
