@@ -4,11 +4,13 @@
 When we write an application, we sometimes need to get data from the user.  For example, if we wanted to write an application that allows users to convert English to Pig Latin, the user would need to supply the English.  One option is to build a user interface that asks the user for input.  We can see an example of this in Figure 1.
 
 ![user interface animation](readme-assets/user-interface-animation.gif)
+
 *Figure 1*.  A script which prompts the user for input.
 
 Alternatively, we can write an application so that users pass in data right when the application is executed.  In other words, users supply *command line arguments* when they run the application.  Just like passing arguments to a method when we call it, we can provide arguments to our applications when we run them.  We can see an example of this in Figure 2.
 
 ![argv interface animation](readme-assets/argv-animation.gif)
+
 *Figure 2*.  A script which relies on command line arguments.
 
 
