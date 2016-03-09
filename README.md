@@ -15,7 +15,7 @@ Alternatively, we can write an application so that users pass in data right when
 
 
 ### Accessing Command Line Arguments
-If a user runs our application and passes in command line arguments, how do we access them?  In what format are they?
+If a user runs our application and passes in command line arguments, how do we access them?  What type/types of objects are they represented by?
 
 When we execute a Ruby script, Ruby creates a constant for us: `ARGV`—short for argument vector.  The value of `ARGV` is always an array.  Each of the command line arguments we pass when running the script becomes an element in the array—specifically, each argument is a string in the array.
 
